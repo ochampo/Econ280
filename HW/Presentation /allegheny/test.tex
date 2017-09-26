@@ -1,0 +1,38 @@
+\documentclass[14pt]{beamer}
+\let\Tiny\tiny% http://tex.stackexchange.com/q/58087/5764
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{biblatex}
+\addbibresource{cite.bib}
+\begin{document}
+
+\begin{frame}
+  \frametitle{This is a title 11pt}
+  Here is some content on the slide
+  \[
+    f(x) = ax^2 + bx + c
+  \]
+  Some more content
+\end{frame}
+
+\begingroup
+\small % \small in 11pt base font is 10pt
+\begin{frame}
+\setbeamerfont{frametitle}{family=\rmfamily,series=\bfseries,size={\fontsize{32}{36}}}
+  Here is some content on the slide
+  \[
+    f(x) = ax^2 + bx + c
+  \]
+  Some more content
+\end{frame}
+\endgroup
+
+\begin{frame}
+  \frametitle{This is a title 12pt}
+
+Let's cite! The Einstein's journal paper \cite{number} and the Dirac's 
+book \cite{number} are physics related items. 
+\end{frame}
+
+\end{document}
